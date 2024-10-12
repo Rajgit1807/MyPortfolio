@@ -1,0 +1,32 @@
+.pro-div{
+    box-shadow: rgba(146, 9, 9, 0.25) 0px 54px 55px, rgba(231, 32, 32, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(196, 154, 154, 0.17) 0px 12px 13px, rgba(249, 40, 40, 0.09) 0px -3px 5px;
+}
+
+  @media screen and (max-width: 1055px) {
+   .project{
+    flex-direction: column;
+    gap: 60px;
+   }
+   .box{
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+   }
+ }
+ @media screen and (max-width: 770px) {
+
+ }
+ @media screen and (max-width:540px) {
+    .project{
+        flex-direction: column;
+        gap: 50px;
+       }
+ }
+
+ @media screen and (max-width:370px) {
+
+
+ }

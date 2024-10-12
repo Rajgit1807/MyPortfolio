@@ -1,0 +1,129 @@
+
+.btn {  
+    border-radius: 4px;
+    height: 44px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 200ms linear;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 0 8px 24px 0 rgba(255,235,167,.2);
+}
+.btn:active,
+.btn:focus {  
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
+}
+.btn:hover {  
+    background-color: #fefefe;
+    color: #d10909;
+    box-shadow: 5px 12px 30px 5px rgba(184, 22, 22, 0.2);
+}
+
+.vibrate-on-hover {
+    display: inline-block; /* Ensure the animation works properly */
+    transition: transform 0.1s; /* Smooth transition */
+}
+
+.vibrate-on-hover:hover {
+    animation: vibrate 0.3s infinite ; /* Start the animation on hover */
+}
+.con-social{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+}
+@keyframes vibrate {
+    0% { transform: translate(0); }
+    20% { transform: translate(-1px, 0); }
+    40% { transform: translate(1px, 0); }
+    60% { transform: translate(-1px, 0); }
+    80% { transform: translate(1px, 0); }
+    100% { transform: translate(0); }
+}
+
+@media screen and (max-width: 1150px) {
+    
+    .contact-me{
+     padding: 0px 30px;
+    
+    }
+    .social{
+        padding: 0px 30px;
+    }
+  }
+  @media screen and (max-width: 1055px) {
+    .con-social{
+       grid-template-columns: repeat(1, 1fr); 
+   }
+   .contact-me{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .social{
+    width: 100%;
+    margin-top: 60px;
+   }
+   .social-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+ }
+ @media screen and (max-width: 770px) {
+   .contact-text, .social-text{
+    font-size: 32px;
+   }
+   .tel-img{
+    width: 44px;
+    margin-bottom: 4px;
+   }
+ }
+ @media screen and (max-width:540px) {
+    .contact-me{
+        padding: 0px 8px;
+       
+       }
+    .social{
+        padding: 0px;
+    }
+ .label{
+    font-size: 23px;
+ }
+ .value{
+    font-size:22px ;
+    margin-top: 2.4px;
+ }
+ .other-method{
+    margin-top: 16px;
+ }
+ }
+
+ @media screen and (max-width:370px) {
+
+   .contact-text, .social-text{
+    font-size: 29px;
+   }
+ .label{
+    font-size: 19px;
+ }
+ .value{
+    margin-top: 3px;
+    font-size:18px;
+ }
+ .other-method{
+    margin-top: 11px;
+ }
+ }

@@ -1,0 +1,37 @@
+@keyframes pendulum {
+    0% {
+      transform: rotate(15deg); /* Start from right */
+    }
+    50% {
+      transform: rotate(-15deg); /* Swing to left */
+    }
+    100% {
+      transform: rotate(15deg); /* Swing back to right */
+    }
+  }
+  
+  .animate-pendulum:hover {
+    animation: pendulum 2s infinite ease-in-out;
+    transform-origin: top center; /* Point of rotation */
+  }
+.knowMe{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+  gap: 70px;
+}
+  @media screen and (max-width: 1050px) {
+    .knowMe{
+      grid-template-columns: repeat(1, 1fr); /* Creates 2 equal columns */
+    }
+    .skills{
+      display: flex;
+flex-direction: column;
+align-items: center;
+}
+  }
+ @media screen and (max-width: 440px) {
+  .knowMe{
+    grid-template-columns: repeat(1, 1fr);
+    gap:50px /* Creates 2 equal columns */
+  }
+ }
