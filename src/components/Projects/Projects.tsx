@@ -1,7 +1,6 @@
 import React from "react";
 import Title from "../common/Title";
 import Image from "next/image";
-import laptopImage from "../assets/laptopImage.png";
 import pitup from "../assets/pitup.png";
 import "./Projects.css";
 

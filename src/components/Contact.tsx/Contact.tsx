@@ -8,11 +8,6 @@ const Contact: React.FC = () => {
   const [nameFocused, setNameFocused] = useState(false);
   const [emailFocused, setEmailFocused] = useState(false);
   const [messageFocused, setMessageFocused] = useState(false);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-
-  const handleMouseEnter = () => {
-      // new Audio(sound).play();
-  };
 
   const handleFocus = (
     setFocus: React.Dispatch<React.SetStateAction<boolean>>
@@ -37,7 +32,7 @@ const Contact: React.FC = () => {
             <p className="text-white text-nowrap text-4xl md:text-5xl font-semibold contact-text">
               CONTACT <span className="text-[#FF2B51]">ME</span>
             </p>
-            <div onMouseEnter={()=>handleMouseEnter}>
+            <div>
             <Image src={TelImg} className="vibrate-on-hover w-14 lg:w-16 mt-2 cursor-pointer tel-img" alt="Tel Image"  
             />
             </div>
