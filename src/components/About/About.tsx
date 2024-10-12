@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css"
 import Title from "../common/Title";
+
 interface CardProps {
   txt: string;
 }
