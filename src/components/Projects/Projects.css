@@ -1,5 +1,8 @@
+.pro-div2{
+  box-shadow: rgba(146, 9, 9, 0.1) 0px 28px 30px, rgba(231, 32, 32, 0.06) 0px -6px 18px, rgba(0, 0, 0, 0.06) 0px 2px 3px, rgba(196, 154, 154, 0.1) 0px 6px 8px, rgba(249, 40, 40, 0.04) 0px -1px 2px;
+}
 .pro-div{
-    box-shadow: rgba(146, 9, 9, 0.25) 0px 54px 55px, rgba(231, 32, 32, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(196, 154, 154, 0.17) 0px 12px 13px, rgba(249, 40, 40, 0.09) 0px -3px 5px;
+  box-shadow: rgba(146, 9, 9, 0.25) 0px 54px 55px, rgba(231, 32, 32, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(196, 154, 154, 0.17) 0px 12px 13px, rgba(249, 40, 40, 0.09) 0px -3px 5px;
 }
 
   @media screen and (max-width: 1055px) {
@@ -24,9 +27,4 @@
         flex-direction: column;
         gap: 50px;
        }
- }
-
- @media screen and (max-width:370px) {
-
-
  }

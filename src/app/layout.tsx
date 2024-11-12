@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Menu from "@/components/Menu/Menu";
 
 
 export const metadata: Metadata = {
@@ -20,7 +19,6 @@ export default function RootLayout({
         className={`antialiased bg-black relative`}
       >
         {children}
-        <Menu/>
       </body>
     </html>
   );
