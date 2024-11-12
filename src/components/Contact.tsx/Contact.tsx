@@ -40,7 +40,8 @@ const handleChange =(e:any) =>{
 
 
 
-const form = useRef();
+const form = useRef<HTMLFormElement | null>(null);
+
 const notify = () => toast.success("The messsage is sent successfully" , {
 style:{width:"250px"}
 });
@@ -49,8 +50,13 @@ const failed = () => toast.error("Please Try Again" ,{
   style:{width:"250px"}
   });
 
-const sendEmail = (e:any) => {
+const sendEmail = (e:React.FormEvent) => {
   e.preventDefault();
+
+  if (!form.current) {
+    console.log('Form reference is not defined');
+    return;
+  }
 
   emailjs
     .sendForm('service_hs8enca', 'template_uksfyro', form.current, {
