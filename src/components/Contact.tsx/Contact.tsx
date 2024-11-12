@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
     message: ''
   });
 
-const handleChange =(e) =>{
+const handleChange =(e:any) =>{
 
   const {name,value} = e.target
   setFormData((prev) => ({ ...prev, [name]: value }));
@@ -49,7 +49,7 @@ const failed = () => toast.error("Please Try Again" ,{
   style:{width:"250px"}
   });
 
-const sendEmail = (e) => {
+const sendEmail = (e:any) => {
   e.preventDefault();
 
   emailjs
